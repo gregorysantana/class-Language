@@ -37,3 +37,11 @@ El query que se utiliza en el método "translate" de la clase para obtener la tr
 Este query selecciona la columna "translation" de la tabla "translations" donde la columna "lang" es igual al idioma seleccionado y la columna "key_name" es igual al nombre clave o identificador de la cadena de texto dada. Es importante mencionar que se esta utilizando una librería MeekroDB, que permite una forma segura y fácil de realizar consultas a la base de datos.
 
 Es importante mencionar que esta es solo una forma de implementar la internacionalización usando una base de datos MySQL con MeekroDB, y en un proyecto real se deben considerar varios aspectos como la seguridad y escalabilidad.
+
+Un ejemplo de traducciones en la tabla "translations", puedes utilizar el siguiente query SQL:
+
+<code>INSERT INTO translations (lang, key_name, translation) VALUES
+("en_US", "Hello", "Hello"),
+("en_US", "Welcome", "Welcome"),
+("es_ES", "Hello", "Hola"),
+("es_ES", "Welcome", "Bienvenido");</code>
